@@ -1,26 +1,20 @@
 import Layout from "../components/layout";
-import Randomiser from "../components/randomiser";
 
-const mealDealData = require("../mealDealData.json");
 
-class Index extends React.Component {
-	constructor(props) {
-		super(props);
+function Index() {
+	return (
+		<Layout>
+			<h1>Meal Deal Randomiser</h1>
 
-		this.state = {
-			data: mealDealData,
-		};
-	}
-
-	render() {
-		return (
-			<Layout>
-				<h1>Index</h1>
-
-				<Randomiser data={this.state.data} />
-			</Layout>
-		);
-	}
+			<div className="container">
+				<a href="/tesco">
+					<div className="box">
+						<h1>Tesco Meal Deal</h1>
+					</div>
+				</a>
+			</div>
+		</Layout>
+	)
 }
 
 export default Index;

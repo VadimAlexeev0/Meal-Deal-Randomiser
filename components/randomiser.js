@@ -33,7 +33,6 @@ class Randomiser extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Component</h1>
 				<p>Main: {this.state.Main}</p>
 				<p>Snack: {this.state.Snack}</p>
 				<p>Drink: {this.state.Drink}</p>
