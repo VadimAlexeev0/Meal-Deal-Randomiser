@@ -10,9 +10,10 @@
   },
   "devDependencies": {},
   "scripts": {
+    "install": "npm ci",
     "dev": "next",
-    "build": "next build && next export",
-    "install": "npm ci"
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
