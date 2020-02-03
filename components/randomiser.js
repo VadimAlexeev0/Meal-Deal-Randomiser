@@ -1,16 +1,14 @@
-const mealDealData = require("../mealDealData.json");
 
 class Randomiser extends React.Component {
 	constructor(props) {
 		super(props);
 
 		this.state = {
-			data: mealDealData,
-
 			Main: "",
 			Snack: "",
 			Drink: "",
 		};
+		this.updateRandomCombo = this.updateRandomCombo.bind(this);
 	}
 
 	componentDidMount() {
@@ -23,20 +21,13 @@ class Randomiser extends React.Component {
 	}
 
 	updateRandomCombo() {
-		let data = this.state.data;
-		console.log(data);
+		let data = this.props.data;
 		this.setState({
 			Main: data[0][this.randomNumber(0, data[0].length)],
 			Snack: data[1][this.randomNumber(0, data[1].length)],
 			Drink: data[2][this.randomNumber(0, data[2].length)],
 		});
-		/*
-		this.setState({
-			Main: this.randomNumber(this.state.data[0].length),
-			Snack: this.randomNumber(this.state.data[1].length),
-			Drink: this.randomNumber(this.state.data[2].length),
-        });
-        */
+		console.log(this.state)
 	}
 
 	render() {
@@ -46,6 +37,8 @@ class Randomiser extends React.Component {
 				<p>Main: {this.state.Main}</p>
 				<p>Snack: {this.state.Snack}</p>
 				<p>Drink: {this.state.Drink}</p>
+
+				<button onClick={this.updateRandomCombo}>Randomise</button>
 			</>
 		);
 	}
