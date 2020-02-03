@@ -1,14 +1,21 @@
 import Layout from "../components/layout";
 import Randomiser from "../components/randomiser";
 
-const mealDealData = require("../tescoData.json");
+import fetch from 'isomorphic-unfetch'
 
 class Index extends React.Component {
+    static async getInitialProps(ctx) {
+        const res = await fetch('http://localhost:3000/api/v0/getdata/tesco')
+        const json = await res.json()
+        return { data: json }
+    }
+
+
     constructor(props) {
         super(props);
 
         this.state = {
-            data: mealDealData,
+            data: this.props.data,
         };
     }
 

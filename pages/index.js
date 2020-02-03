@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 
-
 function Index() {
 	return (
 		<Layout>
@@ -12,7 +11,21 @@ function Index() {
 						<h1>Tesco Meal Deal</h1>
 					</div>
 				</a>
+
+				<a href="/add">
+					<div className="box">
+						<h1>Add Data</h1>
+					</div>
+				</a>
 			</div>
+
+			<style jsx>{`
+				.container{
+					display: flex,
+				}
+				.box{
+				}
+			`}</style>
 		</Layout>
 	)
 }
