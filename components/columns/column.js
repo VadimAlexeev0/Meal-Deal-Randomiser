@@ -6,6 +6,7 @@ class Column extends React.Component {
 
         this.state = {
             selected: "",
+            previous: [""],
             data: this.props.data
         };
         this.randomise = this.randomise.bind(this);
@@ -14,10 +15,25 @@ class Column extends React.Component {
 
     changeSelected = (dataFromChild) => {
         //console.log(`Got Data from Child ${dataFromChild}`)
-        this.setState({ selected: dataFromChild });
+        this.setState({
+            selected: dataFromChild,
+            previous: [...this.state.previous, dataFromChild]
+        });
+        console.log(this.state);
     }
     removeSelected = () => {
-        this.setState({ selected: "" });
+        this.setState({
+            selected: "",
+            previous: [...this.state.previous, ""]
+        });
+        console.log(this.state);
+    }
+    undoSelected = () => {
+        this.setState({
+            selected: this.state.previous[this.state.previous.length],
+            previous: this.state.previous.slice(0, -1)
+        });
+        console.log(this.state)
     }
 
     randomNumber(min, max) {
@@ -26,10 +42,12 @@ class Column extends React.Component {
     }
 
     randomise() {
+        let newElement = this.state.data[this.randomNumber(0, this.state.data.length)]
         this.setState({
-            selected: this.state.data[this.randomNumber(0, this.state.data.length)],
+            selected: newElement,
+            previous: [...this.state.previous, newElement]
         });
-        //console.log(this.state)
+        console.log(this.state)
     }
 
     render() {
@@ -39,7 +57,7 @@ class Column extends React.Component {
                     <div className="name">
                         <h1>{this.props.name}</h1>
                     </div>
-                    <Showcase selected={this.state.selected} callbackFromParent={this.removeSelected} randomise={this.randomise} />
+                    <Showcase selected={this.state.selected} callbackFromParent={this.undoSelected} randomise={this.randomise} />
                     <List data={this.state.data} selected={this.state.selected} callbackFromParent={this.changeSelected} />
                 </div>
                 <style jsx>{`
