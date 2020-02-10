@@ -1,4 +1,10 @@
+import RandomButton from "./randomButton"
+
 class Showcase extends React.Component {
+
+    remove = () => {
+        this.props.callbackFromParent();
+    }
 
     render() {
         let showCaseElement;
@@ -22,6 +28,7 @@ class Showcase extends React.Component {
 
                 <div className="showcase">
                     {showCaseElement}
+                    <RandomButton selected={this.props.selected} callbackFromParent={this.remove} />
                 </div>
                 <style jsx>{`
                     .showcase{
@@ -29,6 +36,10 @@ class Showcase extends React.Component {
                         background-color: #fff;
 
                         text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-content: center;
                     }
                 `}</style>
             </>

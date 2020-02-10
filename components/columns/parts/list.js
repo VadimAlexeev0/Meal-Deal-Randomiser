@@ -3,14 +3,10 @@ class Showcase extends React.Component {
         super(props);
         this.state = {
             list: this.props.data,
-            selected: ""
         }
     }
 
     changeShowcase = (data) => {
-        this.setState({
-            selected: data[0],
-        })
         this.props.callbackFromParent(data);
     }
     render() {
@@ -19,7 +15,7 @@ class Showcase extends React.Component {
 
                 <div className="list">
                     {this.props.data.map((data, index) => (
-                        <div key={index} className="item" id={this.state.selected === data[0] ? "selected" : "no"} onClick={() => this.changeShowcase(data)}>
+                        <div key={index} className="item" id={this.props.selected === data ? "selected" : "no"} onClick={() => this.changeShowcase(data)}>
                             <pre>Icon: {data[1]}</pre>
                             <h3>{data[0]}</h3>
                         </div>

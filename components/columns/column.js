@@ -10,9 +10,12 @@ class Column extends React.Component {
         };
     }
 
-    myCallback = (dataFromChild) => {
+    changeSelected = (dataFromChild) => {
         //console.log(`Got Data from Child ${dataFromChild}`)
         this.setState({ selected: dataFromChild });
+    }
+    removeSelected = () => {
+        this.setState({ selected: "" });
     }
 
     render() {
@@ -22,8 +25,8 @@ class Column extends React.Component {
                     <div className="name">
                         <h1>{this.props.name}</h1>
                     </div>
-                    <Showcase selected={this.state.selected} />
-                    <List data={this.state.data} callbackFromParent={this.myCallback} />
+                    <Showcase selected={this.state.selected} callbackFromParent={this.removeSelected} />
+                    <List data={this.state.data} selected={this.state.selected} callbackFromParent={this.changeSelected} />
                 </div>
                 <style jsx>{`
                     .column{

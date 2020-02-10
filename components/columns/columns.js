@@ -8,7 +8,7 @@ class Columns extends React.Component {
             side: this.props.data[1],
             drink: this.props.data[2],
         }
-        console.log(this.state)
+        //console.log(this.state)
     }
     render() {
         return (
