@@ -1,16 +1,11 @@
 class RandomButton extends React.Component {
-    constructor(props) {
-        super(props)
-
-        this.state = {
-
-        }
-    }
-
     remove = () => {
         this.props.callbackFromParent();
     }
 
+    randomise = () => {
+        this.props.randomiseParent();
+    }
     render() {
         let undoButton;
         if (this.props.selected) {
@@ -36,7 +31,7 @@ class RandomButton extends React.Component {
             <>
                 <div className="container">
                     {undoButton}
-                    <div className="feelingLucky">
+                    <div className="feelingLucky" onClick={this.randomise}>
                         I'm Feeling Lucky
                     </div>
                 </div>
@@ -48,6 +43,7 @@ class RandomButton extends React.Component {
                         justify-content: center;
                         align-content: space-between;
                         cursor: pointer;
+                        user-select: none; 
                     }
                     .feelingLucky{
                         

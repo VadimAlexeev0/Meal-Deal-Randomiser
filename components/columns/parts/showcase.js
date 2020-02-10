@@ -5,6 +5,9 @@ class Showcase extends React.Component {
     remove = () => {
         this.props.callbackFromParent();
     }
+    randomise = () => {
+        this.props.randomise();
+    }
 
     render() {
         let showCaseElement;
@@ -28,7 +31,7 @@ class Showcase extends React.Component {
 
                 <div className="showcase">
                     {showCaseElement}
-                    <RandomButton selected={this.props.selected} callbackFromParent={this.remove} />
+                    <RandomButton selected={this.props.selected} callbackFromParent={this.remove} randomiseParent={this.randomise} />
                 </div>
                 <style jsx>{`
                     .showcase{
