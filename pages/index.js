@@ -1,33 +1,34 @@
 import Layout from "../components/layout";
+import Randomiser from "../components/randomiser";
+import Columns from "../components/columns/columns"
 
-function Index() {
-	return (
-		<Layout>
-			<h1>Meal Deal Randomiser</h1>
 
-			<div className="container">
-				<a href="/tesco">
-					<div className="box">
-						<h1>Tesco Meal Deal</h1>
-					</div>
-				</a>
+import fetch from 'isomorphic-unfetch'
 
-				<a href="/add">
-					<div className="box">
-						<h1>Add Data</h1>
-					</div>
-				</a>
-			</div>
+class Index extends React.Component {
+	static async getInitialProps(ctx) {
+		const res = await fetch('http://localhost:3000/api/v0/getdata/tesco')
+		const json = await res.json()
+		return { data: json }
+	}
 
-			<style jsx>{`
-				.container{
-					display: flex,
-				}
-				.box{
-				}
-			`}</style>
-		</Layout>
-	)
+
+	constructor(props) {
+		super(props);
+
+		this.state = {
+			data: this.props.data,
+		};
+	}
+
+	render() {
+		return (
+			<Layout>
+				<Columns data={this.state.data} />
+				{/*<Randomiser data={this.state.data} />*/}
+			</Layout>
+		);
+	}
 }
 
 export default Index;
