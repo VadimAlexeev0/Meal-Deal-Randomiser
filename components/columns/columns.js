@@ -22,7 +22,6 @@ class Columns extends React.Component {
                     .container{
                         height: 100vh;
                         display: flex;
-                        flex-wrap: wrap;
                         justify-content: space-evenly;
                         align-items: flex-start;
                     }
