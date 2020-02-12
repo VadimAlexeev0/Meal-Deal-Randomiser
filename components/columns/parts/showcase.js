@@ -36,7 +36,7 @@ class Showcase extends React.Component {
                 </div>
                 <style jsx>{`
                     .showcase{
-                        height: 36.8vh;
+                        height: 36.7vh;
                         background-color: #101721;
                         color: #fff;
                         text-align: center;
