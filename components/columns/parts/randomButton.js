@@ -16,7 +16,7 @@ class RandomButton extends React.Component {
                     </div>
                     <style jsx>{`
                         .undo{
-                            width: 20%;
+                            width: 30px;
                             padding: 20px;
                             background-color: #2b3346;
                             border-radius: 30px 0px 0px 30px;
@@ -27,6 +27,22 @@ class RandomButton extends React.Component {
             )
         } else {
             //Do nothing if there is already
+            undoButton = (
+                <>
+                    <div className="undo" onClick={this.remove}>
+
+                    </div>
+                    <style jsx>{`
+                        .undo{
+                            width: 30px;
+                            padding: 20px;
+                            background-color: #2b3346;
+                            border-radius: 30px 0px 0px 30px;
+                            border: solid 1px #848589;
+                        }
+                    `}</style>
+                </>
+            )
         }
 
         return (

@@ -31,8 +31,12 @@ class Showcase extends React.Component {
             <>
 
                 <div className="showcase">
-                    {showCaseElement}
-                    <RandomButton selected={this.props.selected} callbackFromParent={this.remove} randomiseParent={this.randomise} />
+                    <div className="top">
+                        {showCaseElement}
+                    </div>
+                    <div className="bottom">
+                        <RandomButton selected={this.props.selected} callbackFromParent={this.remove} randomiseParent={this.randomise} />
+                    </div>
                 </div>
                 <style jsx>{`
                     .showcase{
@@ -40,12 +44,16 @@ class Showcase extends React.Component {
                         background-color: #101721;
                         color: #fff;
                         text-align: center;
+
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
+                        justify-content: space-between;
                         align-content: center;
 
                         font-family: Arial, Helvetica, sans-serif;
+                    }
+                    .top{
+                        height: 30%;
                     }
                 `}</style>
             </>

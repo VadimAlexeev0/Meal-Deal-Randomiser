@@ -18,7 +18,7 @@ Icon keys:
         9 == Sweets,
     
     Drink:
-        11 == Bottle of Soda,
+        11 == Bottle of Fizzy Drink,
         12 == Juice,
         13 == Water,
         14 == Energy Drink,
