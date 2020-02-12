@@ -40,14 +40,14 @@ class Showcase extends React.Component {
                 </div>
                 <style jsx>{`
                     .showcase{
-                        height: 36.7vh;
+                        height: 36vh;
                         background-color: #101721;
                         color: #fff;
                         text-align: center;
 
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         align-content: center;
 
                         font-family: Arial, Helvetica, sans-serif;
