@@ -45,16 +45,19 @@ class Column extends React.Component {
                 <style jsx>{`
                     .column{
                         width: 33.28%;
-                        border-right: 1px solid;
+                        border-right: 1px solid ;
 
                         display: flex;
                         flex-direction: column;
                     }
                     .name{
                         text-align: center;
-                        background-color: grey; 
+                        background-color: #2e26d9;
+                        color: #fff;
+                        font-family: Arial, Helvetica, sans-serif;
                         height: 9vh;
                         line-height: 9vh;
+                        border-bottom: 1px solid #848589;
                     }
                     h1{
                         margin: 0;

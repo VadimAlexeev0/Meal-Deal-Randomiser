@@ -1,4 +1,5 @@
 import RandomButton from "./randomButton"
+import Icon from "./icon"
 
 class Showcase extends React.Component {
 
@@ -16,7 +17,7 @@ class Showcase extends React.Component {
         if (this.props.selected) {
             showCaseElement = (
                 <>
-                    <pre>Icon: {this.props.selected[1]}</pre>
+                    <Icon id={this.props.selected[1]} />
                     <h1>{this.props.selected[0]}</h1>
                 </>
             )
@@ -36,13 +37,15 @@ class Showcase extends React.Component {
                 <style jsx>{`
                     .showcase{
                         height: 36.8vh;
-                        background-color: #fff;
-
+                        background-color: #101721;
+                        color: #fff;
                         text-align: center;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-content: center;
+
+                        font-family: Arial, Helvetica, sans-serif;
                     }
                 `}</style>
             </>

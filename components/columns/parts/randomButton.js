@@ -18,7 +18,9 @@ class RandomButton extends React.Component {
                         .undo{
                             width: 20%;
                             padding: 20px;
-                            background-color: purple;
+                            background-color: #2b3346;
+                            border-radius: 30px 0px 0px 30px;
+                            border: solid 1px #848589;
                         }
                     `}</style>
                 </>
@@ -46,9 +48,10 @@ class RandomButton extends React.Component {
                         user-select: none; 
                     }
                     .feelingLucky{
-                        
-                        background-color: grey;
+                        border: solid 1px #848589;
+                        background-color: #0e101c;
                         padding: 20px;
+                        border-radius: 0px 30px 30px 0px;
                     }
                 `}</style>
             </>
