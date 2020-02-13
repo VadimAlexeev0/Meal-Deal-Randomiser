@@ -20,11 +20,14 @@ class Showcase extends React.Component {
                         <div key={index} className="item" id={this.props.selected === data ? "selected" : "no"} onClick={() => this.changeShowcase(data)}>
                             <Icon id={data[1]} />
                             <h3>{data[0]}</h3>
+                            {/*
                             <div className="details">
                                 <h4>Price: £2.50</h4>
 
                                 <h4>Calories: 700</h4>
                             </div>
+                            */}
+
                         </div>
                     ))}
                 </div>
