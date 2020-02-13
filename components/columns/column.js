@@ -62,6 +62,13 @@ class Column extends React.Component {
                     h1{
                         margin: 0;
                     }
+
+                    @media only screen and (max-width: 1322px) {
+                        .column {
+                            width: 100%;
+                        }
+                    }
+                    
                 `}</style>
             </>
         )

@@ -25,6 +25,12 @@ class Columns extends React.Component {
                         justify-content: space-evenly;
                         align-items: flex-start;
                     }
+
+                    @media only screen and (max-width: 1322px) {
+                        .container {
+                            flex-wrap: wrap;
+                        }
+                    }
                 `}</style>
             </>
         )

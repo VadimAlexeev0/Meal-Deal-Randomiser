@@ -75,6 +75,16 @@ class Showcase extends React.Component {
                     #selected{
                         border: solid 1px green;
                     }
+
+                    @media only screen and (max-width: 441px){
+                        .item{
+                            width: 100%;
+                            height: 50%;
+                        }
+                        .list{
+                            height: 40vh;
+                        }
+                    }
                 `}</style>
             </>
         )
