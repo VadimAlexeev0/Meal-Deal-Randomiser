@@ -14,14 +14,23 @@ class Index extends React.Component {
 	}
 	render() {
 		return (
-			<Layout>
+			<>
 				<NextSeo
 					title="Meal Deal Generator"
 					description="Look at all Tescos meal deal items"
 				/>
 				<Columns data={this.state.data} />
 				{/*<Randomiser data={this.state.data} />*/}
-			</Layout>
+
+				<style jsx global>{`
+					body, html{
+						margin: 0;
+						overflow-x: hidden; 
+						overflow-y: auto;
+						background-color: #101721;
+					}
+				`}</style>
+			</>
 		);
 	}
 }
