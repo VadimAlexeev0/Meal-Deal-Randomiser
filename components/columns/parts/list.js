@@ -1,5 +1,3 @@
-import Icon from "./icon";
-
 class Showcase extends React.Component {
     constructor(props) {
         super(props);
@@ -18,22 +16,35 @@ class Showcase extends React.Component {
                 <div className="list">
                     {this.props.data.map((data, index) => (
                         <div key={index} className="item" id={this.props.selected === data ? "selected" : "no"} onClick={() => this.changeShowcase(data)}>
-                            <Icon id={data.id} />
+                            {/*<img src={`/images/${data.id}.jpeg`} className="image" alt={data.id} />*/}
                             <h3>{data.name}</h3>
-                            {/*
+                            
                             <div className="details">
-                                <h4>Price: £2.50</h4>
+                                <h4>Price: £{data.price}</h4>
 
-                                <h4>Calories: 700</h4>
+                                <h4>Calories: {data.calories}</h4>
                             </div>
-                            */}
+                            
 
                         </div>
                     ))}
                 </div>
                 <style jsx>{`
+                    h4{
+                        font-weight: lighter;
+                    }
+
+                    .image{
+                        height: 70%!important;
+                        width: auto!important;
+                    }
+
                     .details > *{
                         display: inline;
+                    }
+                    
+                    .details {
+                        margin-bottom: 2px;
                     }
 
                     h4:nth-child(1){
@@ -59,7 +70,7 @@ class Showcase extends React.Component {
                     .item{
                         margin-bottom: 10px;
                         width: 45%;
-                        height: 40%;
+                        height: 25%;
                         margin: 10px;
                         background-color: #2A2D32;
                         text-align: center;
@@ -74,7 +85,8 @@ class Showcase extends React.Component {
                     }
 
                     #selected{
-                        border: solid 1px green;
+                        /*border: solid 1px green;*/
+                        box-shadow: 0px 0px 5px 3px rgba(25,150,56,1);
                     }
 
                     @media only screen and (max-width: 441px){
