@@ -17,8 +17,15 @@ class Showcase extends React.Component {
         if (this.props.selected) {
             showCaseElement = (
                 <>
-                    <Icon id={this.props.selected[1]} />
-                    <h1>{this.props.selected[0]}</h1>
+                    {/*<Icon id={this.props.selected[1]} />*/}
+                    <img src={`/images/${this.props.name}/${this.props.selected.id}.jpeg`} className="image" alt={this.props.selected.id} />
+                    <h1>{this.props.selected.name}</h1>
+
+                    <style jsx>{`
+                        .image{
+                            height: 100%;
+                        }
+                    `}</style>
                 </>
             )
         } else {

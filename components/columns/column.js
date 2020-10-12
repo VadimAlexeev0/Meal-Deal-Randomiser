@@ -39,7 +39,7 @@ class Column extends React.Component {
                     <div className="name">
                         <h1>{this.props.name}</h1>
                     </div>
-                    <Showcase selected={this.state.selected} callbackFromParent={this.removeSelected} randomise={this.randomise} />
+                    <Showcase name={this.props.name} selected={this.state.selected} callbackFromParent={this.removeSelected} randomise={this.randomise} />
                     <List data={this.state.data} selected={this.state.selected} callbackFromParent={this.changeSelected} />
                 </div>
                 <style jsx>{`
@@ -52,15 +52,16 @@ class Column extends React.Component {
                     }
                     .name{
                         text-align: center;
-                        background-color: #2e26d9;
+                        background-color: #003366;
                         color: #fff;
                         font-family: Arial, Helvetica, sans-serif;
-                        height: 9vh;
-                        line-height: 9vh;
+                        height: 5vh;
+                        line-height: 5vh;
                         border-bottom: 1px solid #848589;
                     }
                     h1{
                         margin: 0;
+                        text-transform: capitalize;
                     }
 
                     @media only screen and (max-width: 1322px) {

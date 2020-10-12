@@ -18,8 +18,8 @@ class Showcase extends React.Component {
                 <div className="list">
                     {this.props.data.map((data, index) => (
                         <div key={index} className="item" id={this.props.selected === data ? "selected" : "no"} onClick={() => this.changeShowcase(data)}>
-                            <Icon id={data[1]} />
-                            <h3>{data[0]}</h3>
+                            <Icon id={data.id} />
+                            <h3>{data.name}</h3>
                             {/*
                             <div className="details">
                                 <h4>Price: £2.50</h4>
@@ -42,7 +42,8 @@ class Showcase extends React.Component {
 
                     .list{
                         overflow-y: scroll;
-                        height: 50vh;
+                        height: 54vh;
+                        bottom: 0px;
                         background-color: #101721;
 
                         display: flex;

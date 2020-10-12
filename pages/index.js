@@ -8,14 +8,14 @@ class Index extends React.Component {
 		super(props);
 
 		this.state = {
-			data: require("../tescoData.json"),
+			data: require("../newTescoData.json"),
 		};
 	}
 	render() {
 		return (
 			<>
 				<NextSeo
-					title="Meal Deal Generator"
+					title="Tesco Meal Deal Generator"
 					description="Look at all Tescos meal deal items"
 				/>
 				<Columns data={this.state.data} />

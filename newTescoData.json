@@ -465,38 +465,16 @@
 			"price": 1.00,
 			"calories": 111,
 			"link": "https://www.tesco.com/groceries/en-GB/products/296814530"
-		},
+		}
+	],
+	[
 		{
 			"id": "",
 			"name": "",
 			"type": "",
-			"price": ,
-			"calories": ,
+			"price": 0.00,
+			"calories": 0,
 			"link": ""
-		},
-		{
-			"id": "",
-			"name": "",
-			"type": "",
-			"price": ,
-			"calories": ,
-			"link": ""
-		},
-		{
-			"id": "",
-			"name": "",
-			"type": "",
-			"price": ,
-			"calories": ,
-			"link": ""
-		},
-		{
-			"id": "",
-			"name": "",
-			"type": "",
-			"price": ,
-			"calories": ,
-			"link": ""
-		},
+		}
 	]
 ]

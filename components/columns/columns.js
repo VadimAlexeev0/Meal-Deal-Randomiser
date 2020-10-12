@@ -14,9 +14,9 @@ class Columns extends React.Component {
         return (
             <>
                 <div className="container">
-                    <Column name="Main" data={this.state.main} />
-                    <Column name="Side" data={this.state.side} />
-                    <Column name="Drink" data={this.state.drink} />
+                    <Column name="main" data={this.state.main} />
+                    <Column name="snack" data={this.state.side} />
+                    <Column name="drink" data={this.state.drink} />
                 </div>
                 <style jsx>{`
                     .container{
