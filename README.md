@@ -1,6 +1,6 @@
 Meal Deal Randomiser WIP
 
-Icon keys:
+Icon keys (Not used for new data):
 
     0 == Null,
 
@@ -24,5 +24,4 @@ Icon keys:
         14 == Energy Drink,
 
 
-https://www.tesco.com/groceries/en-GB/promotions/A32793848?page=2&count=48
-Onto Page 2 | 11/02/20
+https://www.tesco.com/groceries/en-GB/buylists/all-lunchbox/ready-to-eat/3pound-meal-deal

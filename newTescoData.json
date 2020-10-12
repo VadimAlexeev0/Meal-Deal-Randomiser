@@ -336,8 +336,136 @@
 			"calories": 467,
 			"link": "https://www.tesco.com/groceries/en-GB/products/305736498"
 		}
-	]
+	],
 	[
+		{
+			"id": "hula-hoops-big-hoops-bbq",
+			"name": "Hula Hoops Big Hoops BBQ",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": null,
+			"link": "https://www.tesco.com/groceries/en-GB/products/264072901"
+		},
+		{
+			"id": "hula-hoops-big-hoops-salted",
+			"name": "Hula Hoops Big Hoops Salted",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": null,
+			"link": "https://www.tesco.com/groceries/en-GB/products/264072890"
+		},
+		{
+			"id": "hula-hoops-big-hoops-salt-and-vinegar",
+			"name": "Hula Hoops Big Hoops Salt & Vinegar",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 252,
+			"link": "https://www.tesco.com/groceries/en-GB/products/305835149"
+		},
+		{
+			"id": "skips-prawn-cocktail",
+			"name": "Skips Prawn Cocktail",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 217,
+			"link": "https://www.tesco.com/groceries/en-GB/products/264470096"
+		},
+		{
+			"id": "mccoys-cheddar-and-onion",
+			"name": "Mccoys Cheddar & Onion",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 252,
+			"link": "https://www.tesco.com/groceries/en-GB/products/292010864"
+		},
+		{
+			"id": "mccoys-flame-grilled-steak",
+			"name": "Mccoys Flame Grilled Steak",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 250,
+			"link": "https://www.tesco.com/groceries/en-GB/products/292010363"
+		},
+		{
+			"id": "mccoys-salt-and-vinegar",
+			"name": "Mccoys Salt & Vinegar",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 251,
+			"link": "https://www.tesco.com/groceries/en-GB/products/292010680"
+		},
+		{
+			"id": "mccoys-thai-sweet-chicken",
+			"name": "Mccoys Thai Sweet Chicken",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 248,
+			"link": "https://www.tesco.com/groceries/en-GB/products/302285160"
+		},
+		{
+			"id": "nik-nak-nice-and-spicy",
+			"name": "Nik Naks Nice & Spicy",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 284,
+			"link": "https://www.tesco.com/groceries/en-GB/products/272942724"
+		},
+		{
+			"id": "popchips-bbq",
+			"name": "Popchips Bbq",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 97,
+			"link": "https://www.tesco.com/groceries/en-GB/products/275236507"
+		},
+		{
+			"id": "popchips-sea-salt",
+			"name": "Popchips Sea Salt",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 94,
+			"link": "https://www.tesco.com/groceries/en-GB/products/275237506"
+		},
+		{
+			"id": "popchips-sea-salt-and-vinegar",
+			"name": "Popchips Sea Salt & Vinegar",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 95,
+			"link": "https://www.tesco.com/groceries/en-GB/products/275236381"
+		},
+		{
+			"id": "popchips-sour-cream-and-onion",
+			"name": "Popchips Sour Cream & Onion",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 95,
+			"link": "https://www.tesco.com/groceries/en-GB/products/275236334"
+		},
+		{
+			"id": "tyrrells-mixed-root-vegetable",
+			"name": "Tyrrells Mixed Root Vegetable",
+			"type": "crisp",
+			"price": 0.85,
+			"calories": 202,
+			"link": "https://www.tesco.com/groceries/en-GB/products/274215027"
+		},
+		{
+			"id": "matterssons-fridge-raiders-roast",
+			"name": "Fridge Raiders Roast",
+			"type": "meat",
+			"price": 1.00,
+			"calories": 105,
+			"link": "https://www.tesco.com/groceries/en-GB/products/281513211"
+		},
+		{
+			"id": "fridge-raiders-southern-style",
+			"name": "Fridge Raiders Southern Style",
+			"type": "meat",
+			"price": 1.00,
+			"calories": 111,
+			"link": "https://www.tesco.com/groceries/en-GB/products/296814530"
+		},
 		{
 			"id": "",
 			"name": "",
@@ -348,7 +476,23 @@
 		},
 		{
 			"id": "",
-			"name": " Hula Hoop Bbq",
+			"name": "",
+			"type": "",
+			"price": ,
+			"calories": ,
+			"link": ""
+		},
+		{
+			"id": "",
+			"name": "",
+			"type": "",
+			"price": ,
+			"calories": ,
+			"link": ""
+		},
+		{
+			"id": "",
+			"name": "",
 			"type": "",
 			"price": ,
 			"calories": ,
