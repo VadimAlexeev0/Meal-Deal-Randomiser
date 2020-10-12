@@ -39,7 +39,7 @@ class Column extends React.Component {
                     <div className="name">
                         <h1>{this.props.name}</h1>
                     </div>
-                    <Showcase name={this.props.name} selected={this.state.selected} callbackFromParent={this.removeSelected} randomise={this.randomise} />
+                    <Showcase selected={this.state.selected} callbackFromParent={this.removeSelected} randomise={this.randomise} />
                     <List data={this.state.data} selected={this.state.selected} callbackFromParent={this.changeSelected} />
                 </div>
                 <style jsx>{`

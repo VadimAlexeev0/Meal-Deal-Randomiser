@@ -1,5 +1,4 @@
 import RandomButton from "./randomButton"
-import Icon from "./icon"
 
 class Showcase extends React.Component {
 
@@ -17,20 +16,22 @@ class Showcase extends React.Component {
         if (this.props.selected) {
             showCaseElement = (
                 <>
-                    {/*<Icon id={this.props.selected[1]} />*/}
-                    <img src={`/images/${this.props.name}/${this.props.selected.id}.jpeg`} className="image" alt={this.props.selected.id} />
                     <h1>{this.props.selected.name}</h1>
-
+                    <img src={`/images/${this.props.selected.id}.jpeg`} className="image" alt={this.props.selected.id} />
                     <style jsx>{`
+                        h1{
+                            margin-top: 0;
+                            margin-bottom: 5px;
+                        }
                         .image{
-                            height: 100%;
+                            height: 85%;
                         }
                     `}</style>
                 </>
             )
         } else {
             showCaseElement = (
-                <h1>Please Select An Element From Below</h1>
+                <h1>Please Select An Item From Below</h1>
             )
         }
 
@@ -60,7 +61,7 @@ class Showcase extends React.Component {
                         font-family: Arial, Helvetica, sans-serif;
                     }
                     .top{
-                        height: 30%;
+                        height: 75%;
                     }
                 `}</style>
             </>

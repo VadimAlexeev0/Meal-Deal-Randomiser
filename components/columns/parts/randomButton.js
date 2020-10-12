@@ -12,11 +12,11 @@ class RandomButton extends React.Component {
             undoButton = (
                 <>
                     <div className="undo" onClick={this.remove}>
-                        Undo
+                        Remove
                     </div>
                     <style jsx>{`
                         .undo{
-                            width: 30px;
+                            width: 50px;
                             padding: 20px;
                             background-color: #2b3346;
                             border-radius: 30px 0px 0px 30px;
@@ -34,7 +34,7 @@ class RandomButton extends React.Component {
                     </div>
                     <style jsx>{`
                         .undo{
-                            width: 30px;
+                            width: 50px;
                             padding: 20px;
                             background-color: #2b3346;
                             border-radius: 30px 0px 0px 30px;
@@ -50,7 +50,7 @@ class RandomButton extends React.Component {
                 <div className="container">
                     {undoButton}
                     <div className="feelingLucky" onClick={this.randomise}>
-                        I'm Feeling Lucky
+                        Select Random
                     </div>
                 </div>
 
